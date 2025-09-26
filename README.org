@@ -103,6 +103,12 @@ An Emacs interface for AI-assisted software development. *The purpose is to prov
 - `gptel`: For intelligent, AI-generated headlines in the prompt file.
 - `flycheck`: To enable the `ai-code-flycheck-fix-errors-in-scope` command.
 
+** Related emacs packages
+- Claude Code (`[[https://github.com/stevemolitor/claude-code.el][claude-code.el]]`)
+- Claude Code IDE (`[[https://github.com/manzaltu/claude-code-ide.el][claude-code-ide.el]]`)
+- Gemini CLI (`[[https://github.com/linchen2chris/gemini-cli.el][gemini-cli.el]]`)
+- [[https://github.com/xenodium/agent-shell][agent-shell]] ([[https://github.com/xenodium/acp.el][acp.el]])
+
 ** License
 
 Apache-2.0 License
