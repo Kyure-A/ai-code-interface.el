@@ -127,8 +127,8 @@ CLIENT-PORT and SERVER-PORT configure networking, and RELATIVE-PATH targets a fi
                   client-port server-port user-command)))
     (when relative-path
       (format
-       "CLIENT_PORT=%d SERVER_PORT=%d npx @modelcontextprotocol/inspector -e VERIFY_SSL=true -e FASTMCP_LOG_LEVEL=INFO uv --directory %s run %s %s stdio"
-       client-port server-port base-dir relative-path base-dir-name))))
+       "CLIENT_PORT=%d SERVER_PORT=%d npx @modelcontextprotocol/inspector -e VERIFY_SSL=true -e FASTMCP_LOG_LEVEL=INFO uv --directory %s run %s "
+       client-port server-port base-dir relative-path))))
 
 (defun ai-code-mcp-inspector--start (context)
   "Launch the inspector using CONTEXT plist produced by `ai-code-mcp-inspector--build-context'."
