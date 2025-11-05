@@ -174,8 +174,8 @@ Argument ARG is the prefix argument."
                   (concat "\n\nNote: Please focus on how to fix the error. Your response should include:\n"
                           "1. A brief explanation of the root cause of the error.\n"
                           "2. A code snippet with the fix.\n"
-                          "3. An explanation of how the fix addresses the error.")))
-         (ai-code--insert-prompt final-prompt))))
+                          "3. An explanation of how the fix addresses the error."))))
+         (ai-code--insert-prompt final-prompt)))
 
 ;;;###autoload
 (defun ai-code-explain ()
