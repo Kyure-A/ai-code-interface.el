@@ -32,6 +32,23 @@ An Emacs interface for AI-assisted software development. *The purpose is to prov
       (ai-code-magit-setup-transients)))
 #+end_src
 
+** Dependencies
+
+*** Required Dependencies
+- Emacs 26.1 or later
+- `org`: Org-mode support
+- `magit`: Git integration
+- `transient`: For the menu system
+- Claude Code (`[[https://github.com/stevemolitor/claude-code.el][claude-code.el]]`)
+
+*** Optional Dependencies
+- `helm`: For an enhanced auto-completion experience (`ai-code-input.el`).
+- `yasnippet`: For snippet support in the prompt file. A library of snippets is included.
+- `gptel`: For intelligent, AI-generated headlines in the prompt file.
+- `flycheck`: To enable the `ai-code-flycheck-fix-errors-in-scope` command.
+- `projectile`: For project root initialization.
+- `helm-gtags`: For tags creation.
+
 ** Usage
 
 *** Backend Configuration
@@ -75,23 +92,6 @@ An Emacs interface for AI-assisted software development. *The purpose is to prov
 - Open a issue, Post information about the new AI coding CLI backend (eg. cursor CLI?), at least providing the command line name. You can also include the version upgrade command, how to resume, where the configuration files are located, and so on. We can ask GitHub Copilot to add support features based on the issue.
 
 ** [[https://github.com/tninja/aider.el/blob/main/appendix.org#be-careful-about-ai-generated-code][Why Agile development with AI?]]
-
-** Dependencies
-
-*** Required Dependencies
-- Emacs 26.1 or later
-- `org`: Org-mode support
-- `magit`: Git integration
-- `transient`: For the menu system
-- Claude Code (`[[https://github.com/stevemolitor/claude-code.el][claude-code.el]]`)
-
-*** Optional Dependencies
-- `helm`: For an enhanced auto-completion experience (`ai-code-input.el`).
-- `yasnippet`: For snippet support in the prompt file. A library of snippets is included.
-- `gptel`: For intelligent, AI-generated headlines in the prompt file.
-- `flycheck`: To enable the `ai-code-flycheck-fix-errors-in-scope` command.
-- `projectile`: For project root initialization.
-- `helm-gtags`: For tags creation.
 
 ** Related emacs packages
 - Claude Code (`[[https://github.com/stevemolitor/claude-code.el][claude-code.el]]`)
