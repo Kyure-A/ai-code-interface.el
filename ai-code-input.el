@@ -81,7 +81,7 @@ CANDIDATE-LIST is an optional list of candidate strings to show before history."
       (with-temp-file helm-history-file ; Save to the Helm-specific history file
         (let ((history-entries (cl-subseq history
                                           0 (min (length history)
-                                                 10000))))  ; Keep last 10000 entries
+                                                 1000))))  ; Keep last 1000 entries
           (insert (let ((print-circle nil))
                     (prin1-to-string history-entries))))))
     input))
