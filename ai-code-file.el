@@ -23,7 +23,8 @@
 
 (defcustom ai-code-sed-command "sed"
   "GNU sed command used to apply prompts to files."
-  :type 'string)
+  :type 'string
+  :group 'ai-code)
 
 ;; Variables that will be defined in ai-code-interface.el
 (defvar ai-code-use-prompt-suffix)
