@@ -162,7 +162,7 @@ Maintains a dedicated history list for this command."
             ((string= file-ext "js")
              (format "node %s" file-name))
             ((string= file-ext "ts")
-             (format "ts-node %s" file-name))
+             (format "npx tsx %s" file-name))
             ((string= file-ext "sh")
              (format "bash %s" file-name))
             (t nil))))
